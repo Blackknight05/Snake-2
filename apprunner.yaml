@@ -1,0 +1,19 @@
+version: 1
+services:
+  snake-game:
+    source:
+      type: image
+      image: your-docker-image-url:latest
+    platform:
+      runtime: python
+      buildCommand: python3 -m pip install -r requirements.txt
+      startCommand: python3 snake_game.py
+    environment:
+      PORT: 8080
+    healthCheck:
+      path: /
+      protocol: HTTP
+      interval: 5s
+      timeout: 2s
+      healthyThreshold: 2
+      unhealthyThreshold: 2
