@@ -1,5 +1,5 @@
 version: 1.0
-services:
-  snake-game:
-    source: .
-    command: python snake.py
+runtime: python3
+build:
+  commands:
+    build: echo "Building Snake Game"
