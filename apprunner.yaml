@@ -1,10 +1,6 @@
-version: 1
+version: 1.0
 services:
   snake-game:
-    source:
-      type: image
-      image: your-docker-image-url:latest
-    platform:
-      runtime: python
-      buildCommand: python3 -m pip install -r requirements.txt
-      startCommand: python3 snake_game.py
+    source: .
+    timeout: 60
+    command: python snake.py
