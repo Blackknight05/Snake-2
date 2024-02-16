@@ -3,4 +3,4 @@ services:
   snake-game:
     source: .
     timeout: 60
-    command: python snake.py
+    command: snake_game.py
