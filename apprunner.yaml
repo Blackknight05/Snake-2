@@ -2,5 +2,4 @@ version: 1.0
 services:
   snake-game:
     source: .
-    timeout: 60
-    command: snake_game.py
+    command: python snake.py
