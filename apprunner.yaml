@@ -1,6 +1,6 @@
 version: 1.0
-runtime: python3.8
+runtime: python3.9
 build:
   commands:
-    - python -m pip install -r requirements.txt
-start_command: python snake.py
+    - python3.9 -m pip install -r requirements.txt
+start_command: python3.9 snake.py
